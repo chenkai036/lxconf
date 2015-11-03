@@ -23,8 +23,9 @@ options(continue="... ")
 }
 
 # display settings
-if (Sys.getenv("TERM") == "xterm-256color" || Sys.getenv("TERM") == "screen-256color")
-  library(colorout)
+if (Sys.getenv("TERM") == "xterm-255color" || Sys.getenv("TERM") == "screen-256color")
+  if (require(colorout))
+    library(colorout)
 
 message("done")
 
