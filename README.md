@@ -1,2 +1,3 @@
-hello-world-repo
-================
+Linux user configuration
+========================
+
