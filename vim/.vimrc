@@ -86,4 +86,5 @@ noremap <C-l> gt
 " colorscheme
 " move the followings to after-directory (:help after-directory) if we need more customizations
 hi Folded term=standout ctermfg=4 ctermbg=0 guifg=Blue guibg=Black
+hi Search term=reverse ctermbg=10 guibg=Green
 

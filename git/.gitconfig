@@ -1,5 +1,12 @@
 [user]
 	email = chenkai036@gmail.com
 	name = Kai Chen
+
 [core]
 	editor = vim
+	autocrlf = input
+	excludesfile = ~/.gitignore
+
+[merge "mps"]
+	name = MPS merge driver
+	driver = "\"/home/chenkai036/.MPS32/config/mps-merger.sh\" %O %A %B %L"
