@@ -37,6 +37,7 @@ set number
 set showmatch
 set showmode
 set showcmd
+set cursorline
 syntax enable
 
 " write settings
@@ -89,4 +90,5 @@ noremap <C-l> gt
 " move the followings to after-directory (:help after-directory) if we need more customizations
 hi Folded term=standout ctermfg=4 ctermbg=0 guifg=Blue guibg=Black
 hi Search term=reverse ctermbg=10 guibg=Green
+hi CursorLine term=standout cterm=bold ctermbg=0
 

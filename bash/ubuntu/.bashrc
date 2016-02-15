@@ -127,3 +127,9 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+if [ -f /usr/share/autojump/autojump.sh ]; then
+  .  /usr/share/autojump/autojump.sh
+fi
+
+eval $(thefuck --alias)
