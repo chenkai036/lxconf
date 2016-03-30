@@ -14,6 +14,7 @@ Plugin 'dcharbon/vim-flatbuffers'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-obsession'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'rdnetto/YCM-Generator', {'branch': 'stable'}
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
