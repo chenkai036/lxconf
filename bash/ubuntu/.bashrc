@@ -134,6 +134,3 @@ fi
 
 eval $(thefuck --alias)
 
-# custom python startup environment setup
-export PYTHONSTARTUP=~/.pystartup
-

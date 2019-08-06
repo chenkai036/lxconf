@@ -17,6 +17,11 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'rdnetto/YCM-Generator', {'branch': 'stable'}
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'rhysd/wandbox-vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -33,6 +38,8 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+colorscheme putty
+
 " display settings
 set encoding=utf-8
 set ruler
@@ -40,7 +47,8 @@ set number
 set showmatch
 set showmode
 set showcmd
-set cursorline
+set nocursorline
+set mouse=a
 syntax enable
 
 " write settings
@@ -91,7 +99,6 @@ noremap <C-l> gt
 
 " colorscheme
 " move the followings to after-directory (:help after-directory) if we need more customizations
-hi Folded term=standout ctermfg=4 ctermbg=0 guifg=Blue guibg=Black
-hi Search term=reverse ctermbg=10 guibg=Green
-hi CursorLine term=standout cterm=bold ctermbg=0
+hi Search term=reverse ctermbg=Yellow ctermfg=Black
+hi Visual term=reverse ctermbg=Blue
 
