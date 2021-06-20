@@ -1,0 +1,21 @@
+[submodule "vim/.vim/plugged/LanguageClient-neovim"]
+	path = vim/.vim/plugged/LanguageClient-neovim
+	url = https://github.com/autozimu/LanguageClient-neovim.git
+[submodule "vim/.vim/plugged/ctrlp.vim"]
+	path = vim/.vim/plugged/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "vim/.vim/plugged/nerdtree"]
+	path = vim/.vim/plugged/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/.vim/plugged/vim-airline"]
+	path = vim/.vim/plugged/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "vim/.vim/plugged/vim-airline-themes"]
+	path = vim/.vim/plugged/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "vim/.vim/plugged/vim-fugitive"]
+	path = vim/.vim/plugged/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/.vim/plugged/vim-gitgutter"]
+	path = vim/.vim/plugged/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git

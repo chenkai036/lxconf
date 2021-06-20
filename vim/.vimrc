@@ -1,44 +1,22 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" set the runtime path to include vim-plug and initialize
+call plug#begin('~/.vim/plugged')
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-Plugin 'rust-lang/rust.vim'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'dcharbon/vim-flatbuffers'
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-obsession'
-Plugin 'derekwyatt/vim-scala'
-Plugin 'rdnetto/YCM-Generator', {'branch': 'stable'}
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'rhysd/wandbox-vim'
-Plugin 'kien/ctrlp.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'scrooloose/nerdtree'
+Plug 'kien/ctrlp.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
+" Plug 'Valloric/YouCompleteMe'
+" Plug 'vim-airline/vim-airline-themes'
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
+call plug#end()              " required
 filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-
-colorscheme putty
 
 " display settings
 set encoding=utf-8
@@ -77,28 +55,10 @@ set wildignorecase
 
 set foldmethod=syntax
 
-" autocmd
-if has('autocmd')
-
-  " don't replace tabs with spaces when editing makefiles
-  autocmd Filetype makefile setlocal noexpandtab
-
-  " disable automatic code indentation when editing TeX and XML files
-  autocmd Filetype tex,xml setlocal indentexpr=
-
-  " automatic cleanup on write
-
-  " delete any trailing whitespaces
-  autocmd BufWritePre * :%s/\s\+$//ge
-
-endif
-
 " general key mappings
 noremap <C-h> gT
 noremap <C-l> gt
 
-" colorscheme
-" move the followings to after-directory (:help after-directory) if we need more customizations
-hi Search term=reverse ctermbg=Yellow ctermfg=Black
-hi Visual term=reverse ctermbg=Blue
+" global plugin settings
+let g:airline_powerline_fonts = 1
 
