@@ -43,6 +43,7 @@ set softtabstop=2
 set tabstop=2
 set smarttab
 set textwidth=120
+set autoindent
 
 " search settings
 set hlsearch
@@ -55,6 +56,7 @@ set autochdir
 set wildignorecase
 
 set foldmethod=syntax
+set switchbuf=usetab,newtab
 
 " general key mappings
 noremap <C-h> gT
