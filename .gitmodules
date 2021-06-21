@@ -19,3 +19,6 @@
 [submodule "vim/.vim/plugged/vim-gitgutter"]
 	path = vim/.vim/plugged/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "/Users/chenkai/code/lxconf/vim/.vim/plugged/ale"]
+	path = /Users/chenkai/code/lxconf/vim/.vim/plugged/ale
+	url = https://github.com/dense-analysis/ale.git

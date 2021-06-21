@@ -11,6 +11,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
+Plug 'dense-analysis/ale'
 " Plug 'Valloric/YouCompleteMe'
 " Plug 'vim-airline/vim-airline-themes'
 
