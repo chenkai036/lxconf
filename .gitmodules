@@ -22,3 +22,6 @@
 [submodule "vim/.vim/plugged/ale"]
 	path = vim/.vim/plugged/ale
 	url = https://github.com/dense-analysis/ale.git
+[submodule "vim/.vim/boot/vim-plug"]
+	path = vim/.vim/boot/vim-plug
+	url = https://github.com/junegunn/vim-plug.git
