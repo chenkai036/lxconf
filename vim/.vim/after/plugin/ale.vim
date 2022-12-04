@@ -1,6 +1,6 @@
 if exists("g:loaded_ale")
 
-  let g:ale_linters = {'rust': ['rls']}
+  let g:ale_linters = {'rust': ['analyzer']}
 
   nnoremap <silent> <Plug>(ale_find_references_rel) :ALEFindReferences -relative<CR>
 

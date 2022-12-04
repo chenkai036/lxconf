@@ -12,6 +12,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 Plug 'dense-analysis/ale'
+Plug 'sheerun/vim-polyglot'
 " Plug 'Valloric/YouCompleteMe'
 " Plug 'vim-airline/vim-airline-themes'
 
@@ -27,7 +28,10 @@ set showmatch
 set showmode
 set showcmd
 set nocursorline
-set mouse=a
+set mouse+=a
+if &term =~ '^screen'
+"  set ttymouse=xterm2  " tmux knows the extended mouse mode
+endif
 syntax enable
 
 " write settings
